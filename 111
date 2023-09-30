@@ -1,0 +1,21 @@
+import turtle as trtl
+pen = trtl.Turtle()
+X = 0
+
+screen = trtl.Screen()
+screen.setup(1.0, 1.0)
+
+trtl.bgcolor("black")
+pen.pencolor("green")
+pen.hideturtle()
+pen.penup()
+pen.goto(0,200)
+pen.pendown()
+for i in range(200):
+  pen.forward(X*2)
+  pen.right(X)
+  pen.speed(X)
+  X+=1
+
+wn = trtl.Screen()
+wn.mainloop()
