@@ -1,0 +1,42 @@
+import os
+import time
+os.system('clear')
+one = input("would you like to enter the loop?_")
+if one == "yes":
+    os.system('clear')
+    print("your in the loop ;)")
+    time.sleep(1)
+    print("5")
+    time.sleep(1)
+    print("4")
+    time.sleep(1)
+    print("3")
+    time.sleep(1)
+    print("2")
+    time.sleep(1)
+    print("1")
+    time.sleep(1)
+    one = input("would you like to continue in the loop?_")
+    if one == 'no':
+        print("ok then...")
+    while(one == 'yes'):
+        os.system('clear')
+        print("your are still in the loop ;)")
+        time.sleep(1)
+        print("5")
+        time.sleep(1)
+        print("4")
+        time.sleep(1)
+        print("3")
+        time.sleep(1)
+        print("2")
+        time.sleep(1)
+        print("1")
+        one = input("would you like to continue in the loop?_")
+        if one == 'no':
+            print("ok then...")
+elif one == "no":
+    os.system('clear')
+    print("ok then...")
+time.sleep(1)
+print("<END>")
